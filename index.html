@@ -1,30 +1,69 @@
 <!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ</title>
-</head>
-<body>
-    <div style="width: 80%;">
-        <img src="picture/fiddler.jpg" alt="Fiddler on the Roof">
-        <hr>
-        <p>
-            <span style="color: rgb(193, 69, 69);">Thanks to everyone who made Fiddler on the Roof Jr. such a smashing success!</span>
-             After all of the hand work on rehearsals and set building and promotion, it really paid off. I have gotten so many comments your wonderful performances.
-        </p>
-             <br>
-        <p>
-             I've started putting up a <a href="trangCon1.html">slide show</a> of the production. Please feel free to dowload the files from the Web site. 
-            If you want high resolution photo CD, please contact me.
-        </p>
-            <br>
-        <p>
-            Once again: <span style="color: rgb(193, 69, 69);"><i>BRAVO!!!</i></span> -- Mrs.Juroszek.
-        </p>
-        <hr>
-    </div>
-    
-
-</body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TIMETABLE</title>
+    </head>
+    <body>
+        <h2>Example: Student Timetable</h2>
+        <table border = "5" width="100%" height="90" cellpadding="12" >
+            <caption><b>Student Timetable — Semester 1</b></caption>
+            <thead>
+                <tr style="background-color: rgb(149, 142, 142);">
+                    <th>Period</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+             </thead>
+             <tbody>
+                <tr>
+                    <th>Period 1</th>
+                    <td>Math</td>
+                    <td rowspan="2">Programming</td>
+                    <td>English</td>
+                    <td>Web Design</td>
+                    <td>Math</td>
+                </tr>
+                <tr>
+                    <th>Period 2</th>
+                    <td>History</td>
+                    <td>Science</td>
+                    <td>English</td>
+                    <td>PE</td>
+                </tr>
+                <tr> 
+                    <th colspan="6" style="background-color:  rgb(149, 142, 142);"> Lunch Break </th>
+                </tr>
+                <tr>
+                     <th>Period 3</th>
+                     <td colspan="2" style="text-align:center;">Project Work</td>
+                     <td>Math</td>
+                     <td>Programming</td>
+                     <td>Free</td>
+                </tr>
+                <tr>
+                    <th>Period 4</th>
+                    <td>English</td>
+                    <td>History</td>
+                    <td rowspan="2">Science Lab</td>
+                    <td>Web Design</td>
+                    <td>Math</td>
+                </tr>
+                    <th>Period 5</th>
+                    <td>PE</td>
+                    <td>Math</td>
+                    <td>English</td>
+                    <td>Programming</td>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td style="background-color: rgba(149, 142, 142); text-align:center" colspan="6">Note: This timetable is subject to change.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
 </html>
