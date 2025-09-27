@@ -1,69 +1,173 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>TIMETABLE</title>
-    </head>
-    <body>
-        <h2>Example: Student Timetable</h2>
-        <table border = "5" width="100%" height="90" cellpadding="12" >
-            <caption><b>Student Timetable — Semester 1</b></caption>
-            <thead>
-                <tr style="background-color: rgb(149, 142, 142);">
-                    <th>Period</th>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
-                </tr>
-             </thead>
-             <tbody>
-                <tr>
-                    <th>Period 1</th>
-                    <td>Math</td>
-                    <td rowspan="2">Programming</td>
-                    <td>English</td>
-                    <td>Web Design</td>
-                    <td>Math</td>
-                </tr>
-                <tr>
-                    <th>Period 2</th>
-                    <td>History</td>
-                    <td>Science</td>
-                    <td>English</td>
-                    <td>PE</td>
-                </tr>
-                <tr> 
-                    <th colspan="6" style="background-color:  rgb(149, 142, 142);"> Lunch Break </th>
-                </tr>
-                <tr>
-                     <th>Period 3</th>
-                     <td colspan="2" style="text-align:center;">Project Work</td>
-                     <td>Math</td>
-                     <td>Programming</td>
-                     <td>Free</td>
-                </tr>
-                <tr>
-                    <th>Period 4</th>
-                    <td>English</td>
-                    <td>History</td>
-                    <td rowspan="2">Science Lab</td>
-                    <td>Web Design</td>
-                    <td>Math</td>
-                </tr>
-                    <th>Period 5</th>
-                    <td>PE</td>
-                    <td>Math</td>
-                    <td>English</td>
-                    <td>Programming</td>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td style="background-color: rgba(149, 142, 142); text-align:center" colspan="6">Note: This timetable is subject to change.</td>
-                </tr>
-            </tfoot>
-        </table>
-    </body>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BÀI 4</title>
+    <style>
+        .container {
+            background-color: rgb(176, 222, 253);
+            width: 60%;
+            border: 2px solid black;
+            padding: 20px;
+            margin: auto;
+        }
+        .header {
+            background-color: cyan;
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin: auto;
+            text-align: center;
+            padding: 5px 0;
+            box-shadow: 6px 6px 5px rgb(62, 61, 62);
+        }
+        .header h1 {
+            margin: 0;
+            line-height: 1.2;
+        }
+        .header hr {
+            border: 2px solid rgb(44, 41, 41);
+            margin: 2px 0px;
+        }
+        .formTitle {
+            text-align: center;
+        }
+        .registrationTable {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 18px;
+            border-collapse: collapse;
+        }
+        .registrationTable caption {
+            font-weight: bold;
+            padding-bottom: 15px;
+        }
+        .registrationTable td {
+            vertical-align: top;
+            padding: 8px 0;
+        }
+        .inputCell {
+            padding-left: 80px;
+        }
+
+        .inputGroup label {
+            margin-left: 10px;
+        }
+        .optionsGroup label {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .commentsBox {
+            width: 80%;
+            height: 50px;
+        }
+        .buttonCell {
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Jackson</h1>
+            <hr />
+            <h1>Electronics</h1>
+        </div>
+        <h2 class="formTitle">Registration Form</h2>
+        <form>
+            <table class="registrationTable">
+                <caption>Register your Jackson Electronics product here</caption>
+                <tbody>
+                    <tr>
+                        <td><label for="firstName">First Name:</label></td>
+                        <td class="inputCell">
+                            <input type="text" id="firstName" style="width: 25%" />
+                            <label for="lastName" style="margin-left: 10px">Last Name:</label>
+                            <input type="text" id="lastName" style="width: 25%" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="address1">Address #1:</label></td>
+                        <td class="inputCell"><input type="text" id="address1" style="width: 40%" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address2">Address #2:</label></td>
+                        <td class="inputCell"><input type="text" id="address2" style="width: 40%" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="city">City:</label></td>
+                        <td class="inputCell inputGroup">
+                            <input type="text" id="city" style="width: 30%" />
+                            <label for="state">State:</label>
+                            <input type="text" id="state" style="width: 10%" />
+                            <label for="zip">Zip:</label>
+                            <input type="text" id="zip" style="width: 15%" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="country">Country:</label></td>
+                        <td class="inputCell"><input id="country" value="United States" style="width: 30%" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><hr /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="product">Products:</label></td>
+                        <td class="inputCell">
+                            <select id="product">
+                                <option>ScanMaster</option>
+                                <option>ABCDEF</option>
+                                <option>ETTYUIT</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="purchaseDate">Date Purchased:</label></td>
+                        <td class="inputCell"><input type="date" id="purchaseDate" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="serial">Serial #:</label></td>
+                        <td class="inputCell"><input type="text" id="serial" /></td>
+                    </tr>
+                    <tr>
+                        <td>Used for:</td>
+                        <td class="inputCell optionsGroup">
+                            <label><input type="radio" name="usage" /> Home</label>
+                            <label style="margin-left: 80px"><input type="radio" name="usage" /> Business</label>
+                            <label style="margin-left: 60px"><input type="radio" name="usage" /> Other</label><br />
+                            <label><input type="radio" name="usage" /> Government</label>
+                            <label style="margin-left: 28px"><input type="radio" name="usage" /> Educational Institution</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>System (check all that apply):</td>
+                        <td class="inputCell optionsGroup">
+                            <label><input type="checkbox" name="system" /> Windows</label>
+                            <label style="margin-left: 80px"><input type="checkbox" name="system" /> Macintosh</label><br />
+                            <label><input type="checkbox" name="system" /> UNIX</label>
+                            <label style="margin-left: 108px"><input type="checkbox" name="system" /> Other</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><hr /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="comments">Comments?:</label></td>
+                        <td class="inputCell">
+                            <textarea id="comments" class="commentsBox"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="buttonCell">
+                            <button type="submit">Click to register</button>
+                            <button type="reset">Click to cancel</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
 </html>
