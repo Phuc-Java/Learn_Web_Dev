@@ -91,11 +91,11 @@ body {
     height: 420px;
 }
 .item2 {
-    flex: 1 1 216px;
+    flex: 1 0 10px;
     height: 300px;
 }
 .item3 {
-    flex: 1 1 277.5px;
+    flex: 1 0 10px;
     height: 300px;
 }
 .footer {
