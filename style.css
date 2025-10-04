@@ -18,7 +18,7 @@ body {
     max-width: 1200px; 
     margin: 0 auto;
     align-items: center;
-    padding: 20px;
+    padding: 29px 83px;
 }
 .box {
     background-color: #E2E2E2;
@@ -48,7 +48,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     align-items: center;
-    padding: 80px 40px;
+    padding: 80px 83px;
 }
 .sectionOne {
     display: flex;
