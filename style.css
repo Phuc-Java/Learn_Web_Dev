@@ -80,22 +80,60 @@ body {
     width: 600px;
     height: 80px;
 }
-.mainItem {
-    display: flex;
+.mainItem1 {
+    display: grid;
     width: 100%;
     gap: 30px;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.mainItem2 {
+    display: grid;
+    width: 100%;
+    gap: 30px;
+    grid-template-columns: repeat(5, 1fr);
+}
+.mainItem3 {
+    display: grid;
+    width: 100%;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 900px) {
+    .mainItem1 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .mainItem2 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .mainItem3 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .mainItem1 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .mainItem2 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .mainItem3 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
 }
 .item1 {
-    flex: 1 1 380px; 
     height: 420px;
 }
 .item2 {
-    flex: 1 0 10px;
     height: 300px;
 }
 .item3 {
-    flex: 1 0 10px;
     height: 300px;
 }
 .footer {
